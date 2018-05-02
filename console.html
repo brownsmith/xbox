@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>XBOX</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/bootstrap-responsive.min.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+  </head>
+  <body>
+
+  	<div class="wrapper clearfix" id="xhome">
+		<div class="x"></div>
+		<form class="homescreen" id="homescreen">
+			<fieldset>
+				<p>
+					<input type="text" placeholder="Xbox LIVE gamer tag" id="username">
+				</p>
+				<p>
+					<a href="console.html" class="btn" id="enter">Enter</a>
+				</p>
+			</fieldset>
+		</form>
+	
+		<div id="output"></div>
+	</div>
+
+  	<!-- <div class="x"></div> -->
+	<div class="wrapper clearfix hide" id="xconsole">
+		<!-- <h3>Console</h3> -->
+		<h4 id="welcomeMsg"></h4>
+		
+		<div class="accordion" id="accordion">
+		  <div class="accordion-group">
+			<div class="accordion-heading">
+			  <a class="accordion-toggle btn " data-toggle="collapse" data-parent="#accordion2" href="#collapseOne" id="btn-profile">
+				<span id="insertUserName"></span> Profile
+			  </a>
+			</div>
+			<div id="collapseOne" class="accordion-body collapse">
+			  <div class="accordion-inner" id="data-profile">
+				
+			  </div>
+			</div>
+		  </div>
+		  <div class="accordion-group">
+			<div class="accordion-heading">
+			  <a class="accordion-toggle btn " data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo" id="btn-friends">
+				Friends
+			  </a>
+			</div>
+			<div id="collapseTwo" class="accordion-body collapse">
+			  <div class="accordion-inner" id="data-friends">
+				Anim pariatur cliche...
+			  </div>
+			</div>
+		  </div>
+		  <div class="accordion-group">
+			<div class="accordion-heading">
+			  <a class="accordion-toggle btn " data-toggle="collapse" data-parent="#accordion3" href="#collapseThree" id="btn-games">
+				Games
+			  </a>
+			</div>
+			<div id="collapseThree" class="accordion-body collapse">
+			  <div class="accordion-inner" id="data-games">
+				
+			  </div>
+			  <div class="accordion-inner hide" id="data-game">
+				
+			  </div>
+			</div>
+		  </div>
+		</div>
+		
+		<div id="output"></div>
+	</div>
+	<script src="js/jQuery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/xbox.js"></script>
+  </body>
+ </html>
